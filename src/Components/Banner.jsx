@@ -34,7 +34,11 @@ const Banner =() => {
                 <span className="font-bold" style={{ color: '#EC0D8E' }}> Infinity</span>
                 </h1>
                 <p data-aos="fade-left">
-                    Other Description about the Website and yourself
+                <span className="font-bold" style={{ color: '#EC0D8E' }}> Code</span> 
+                <span className="font-bold" style={{ color: '#F7941F' }}> Crafted</span>,
+                <span className="font-bold" style={{ color: '#F6EE1F' }}> Solutions</span> 
+                <span className="font-bold" style={{ color: '#34BDDE' }}> Infinite</span>
+                    
                 </p>
                 <div className="flex mt-8 gap-2">
                     <div className="flex items-center justify-center">
