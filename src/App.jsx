@@ -6,7 +6,7 @@ import Services from "./Components/Services";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { BallTriangle } from "react-loader-spinner";
+import { DNA } from "react-loader-spinner";
 
 const App = () => {
   const [loading, setloading] = useState(false);
@@ -15,26 +15,24 @@ const App = () => {
     setloading(true);
     setTimeout(() => {
       setloading(false);
-    }, 250);
+    }, 1000);
   }, []);
 
   return (
     <>
       {loading ? (
-        <div className="bg-slate-900 h-[100vh] flex justify-center items-center">
-          <BallTriangle
-            height={100}
-            width={100}
-            radius={5}
-            color="#d946ef"
-            ariaLabel="ball-triangle-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
+        <div className=" h-[100vh] flex justify-center items-center">
+          <DNA
             visible={true}
-          />
+            height="400"
+            width="800"
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
+            />
         </div>
       ) : (
-        <div className="bg-slate-900">
+        <div className="">
           <Nav />
           <Banner />
           <About />
