@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { DNA } from "react-loader-spinner";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const App = () => {
   const [loading, setloading] = useState(false);
@@ -19,7 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       {loading ? (
         <div className=" h-[100vh] flex justify-center items-center">
           <DNA
@@ -32,17 +33,19 @@ const App = () => {
             />
         </div>
       ) : (
-        <div className="">
+        <>
           <Nav />
-          <Banner />
-          <About />
-          <Services />
-          <Projects />
-          <Contact />
+          <Routes>
+            <Route path="/" element={<Banner />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes>
           <Footer />
-        </div>
+        </>
       )}
-    </>
+    </Router>
   );
 };
 

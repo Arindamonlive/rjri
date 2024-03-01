@@ -6,6 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import { IoIosAirplane } from "react-icons/io";
+import { FaMobile } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import React from "react";
 
 const Banner = () => {
   useEffect(() => {
@@ -18,13 +22,13 @@ const Banner = () => {
 
   return (
     <div
-      id="Home"
-      className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center"
+      id="/"
+      className=" lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center border-b-2 border-dashed border-blue-300 overflow-x-hidden"
     >
       <div className="h-full lg:py-5 flex flex-col justify-center lg:items-start items-center">
         <h1
           data-aos="fade-right"
-          className="text-[36px] font-semibold mb-8 leading-normal uppercase text-center mx-auto"
+          className="text-[36px] font-semibold mb-8 leading-normal uppercase text-center mx-auto w-full"
         >
           <span className="" style={{ color: "#2C3594" }}>
             Welcome
@@ -128,6 +132,18 @@ const Banner = () => {
                 className="text-fuchsia-600 hover:text-fuchsia-600 rounded-full glow p-2"
               >
                 <FaInstagram className="text-[28px]" />
+              </a>
+              <a
+                href="tel:+919830410335"
+                className="text-red-600 hover:text-fuchsia-600 rounded-full glow p-2"
+              >
+                <FaMobile className="text-[28px]" />
+              </a>
+              <a
+                href="https://wa.me/message/SOPBPN6JSYZ7K1"
+                className="text-green-600 hover:text-fuchsia-600 rounded-full glow p-2"
+              >
+                <FaWhatsapp className="text-[28px]" />
               </a>
             </div>
           </div>
