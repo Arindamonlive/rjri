@@ -19,6 +19,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaMobile } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import img from '../assets/bgp3.jpg';
 
 const Services = () => {
     const [showContactForm, setShowContactForm] = useState(false);
@@ -37,7 +38,8 @@ const Services = () => {
     return (
         <div
             id="Services"
-            className="p-20  items-center justify-center border-b-2 border-dashed border-red-400">
+            className="p-20  items-center justify-center border-b-2 border-solid border-red-400"
+            style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <h1
                 data-aos="fade-right"
                 className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500">
@@ -45,7 +47,7 @@ const Services = () => {
             </h1>
 
             <div className="flex flex-col items-center">
-                <h1 data-aos="fade-right" className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500">
+                <h1 data-aos="fade-right" className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}>
                     Services
                 </h1>
 
@@ -83,7 +85,7 @@ const Services = () => {
             >
                 <h1
                     data-aos="fade-right"
-                    className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"
+                    className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}
                 >
                     Packages
                 </h1>
