@@ -47,7 +47,7 @@ const Services = () => {
             </h1>
 
             <div className="flex flex-col items-center">
-                <h1 data-aos="fade-right" className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}>
+                <h1 data-aos="fade-right" className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500" style={{ textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)" }}>
                     Services
                 </h1>
 
@@ -85,7 +85,7 @@ const Services = () => {
             >
                 <h1
                     data-aos="fade-right"
-                    className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}
+                    className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500" style={{ textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)" }}
                 >
                     Packages
                 </h1>
@@ -93,15 +93,20 @@ const Services = () => {
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-around text-center">
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            FlexiWeb Pro
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
                             Static/Dynamic WebApp
                         </h3>
                         <p className="text-gray-600">Revolutionize Your Online Presence with Our 'Static or Dynamic WebApp' – Choose Flexibility, Optimize Performance</p>
-                        <p className="text-[12px] font-bold">1. Maximum page 7</p><p className="text-[12px] font-bold" onClick={openContactForm}>2. Only Frontend Service</p><p className="text-[12px] font-bold">3. Delivery within 3 Working Days</p>
+                        {/* <p className="text-[12px] font-bold">1. Maximum page 7</p><p className="text-[12px] font-bold" onClick={openContactForm}>2. Only Frontend Service</p><p className="text-[12px] font-bold">3. Delivery within 3 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $17.99 or ₹ 1,499.00</p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $17.99 or ₹ 1,499.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $199.99 or ₹ 16,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $499.99 or ₹ 41,499.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -133,7 +138,7 @@ const Services = () => {
                                 Contact
                             </button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -156,15 +161,20 @@ const Services = () => {
 
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            Quickflex Android
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
                             Static/Dynamic Android App
                         </h3>
                         <p className="text-gray-600">Revolutionize Your Online Presence with Our 'Static or Dynamic Android App' – Choose Flexibility, Optimize Performance</p>
-                        <p className="text-[12px] font-bold">1. Maximum page 5</p><p className="text-[12px] font-bold">2. Only Frontend Service</p><p className="text-[12px] font-bold">3. Delivery within 10 Working Days</p>
+                        {/* <p className="text-[12px] font-bold">1. Maximum page 5</p><p className="text-[12px] font-bold">2. Only Frontend Service</p><p className="text-[12px] font-bold">3. Delivery within 10 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $42.99 or ₹ 3,499.00</p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $44.99 or ₹ 3,499.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $499.99 or ₹ 41,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $999.99 or ₹ 83,499.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -194,7 +204,7 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -214,15 +224,20 @@ const Services = () => {
                     </div>
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            PeakWeb & DroidBoost Bundle
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
                             [Combo Offer] <p className="">Static/Dynamic WebApp & Android App</p>
                         </h3>
                         <p className="text-gray-600">Revolutionize Your Online Presence with Our 'Static or Dynamic WebApp & Android App' – Choose Flexibility, Optimize Performance</p>
-                        <p className="text-[12px] font-bold">1. Maximum page 7</p><p className="text-[12px] font-bold">2. Only Frontend Service</p><p className="text-[12px] font-bold">3. Delivery within 10 Working Days</p>
+
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $60 or ₹ 4,999.00</p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $60 or ₹ 4,999.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $999.99 or ₹ 83,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $1999.99 or ₹ 1,66,999.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -252,7 +267,7 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -272,15 +287,20 @@ const Services = () => {
                     </div>
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            CodeSync Pro
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
                             Java(SpringBoot)/Python(Django) + API Services + DataBase
                         </h3>
                         <p className="text-gray-600">Empower your business with seamless integration: Java(SpringBoot)/Python(Django) + API Services + Database - Unleashing the Power of Connectivity</p>
-                        <p className="text-[12px] font-bold">1. Maximum API 10</p><p className="text-[12px] font-bold">2. Only Backend Service</p><p className="text-[12px] font-bold">3. Delivery within 15 - 30 Working Days</p>
+                        {/* <p className="text-[12px] font-bold">1. Maximum API 10</p><p className="text-[12px] font-bold">2. Only Backend Service</p><p className="text-[12px] font-bold">3. Delivery within 15 - 30 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $199.99 or ₹ 16,499.00</p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $499.99 or ₹ 16,499.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $1999.99 or ₹ 83,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $2999.99 or ₹ 2,50,000.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -310,7 +330,7 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -330,131 +350,20 @@ const Services = () => {
                     </div>
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            UniFlex Suite
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
-                            Middleware
-                        </h3>
-                        <p className="text-gray-600">Empower Your Business Flow with Middleware: Seamless Integration, Effortless Efficiency</p>
-                        <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Only Backend Service</p><p className="text-[12px] font-bold">3. Delivery within 15 Working Days</p>
-
-                        <div className="mt-4">
-                            <p className="text-lg font-semibold">Only at $99.99 or ₹ 7,999.00 </p>
-                            {/* <form action="" className="">
-                                <input
-                                    type="text"
-                                    className="border border-red-800 rounded p-2 w-full"
-                                    placeholder="Name"
-                                    name="name"
-                                />
-                                <input
-                                    type="text"
-                                    className="border border-green-800 rounded p-2 w-full mt-2"
-                                    placeholder="Email"
-                                    name="email"
-                                />
-                                <input
-                                    type="text"
-                                    className="border border-blue-800 rounded p-2 w-full mt-2"
-                                    placeholder="PhoneNumber with CountryCode"
-                                    name="phone"
-                                />
-                                <textarea
-                                    className="border border-yellow-400 rounded p-2 w-full mt-2"
-                                    placeholder="Any Additional Information"
-                                    rows="5"
-                                    cols="30"
-                                    name="additionalInfo"
-                                ></textarea>
-                            </form>
-                            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
-                            <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
-                                    <FaWhatsapp style={{ color: "#075E54", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://ig.me/m/arindam_atjoy" target="_blank" rel="noopener noreferrer">
-                                    <FaInstagram style={{ color: "#d62976", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://m.me/ArindamChakraborty747" target="_blank" rel="noopener noreferrer">
-                                    <FaFacebook style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="tel:+919830410335">
-                                    <FaMobile style={{ color: "#A2AAAD", fontSize: "48px" }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
-                            {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
-                            Deployment
-                        </h3>
-                        <p className="text-gray-600">Unlock Infinite Possibilities with AWS - Your Gateway to Seamless Cloud Solutions</p>
-                        <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Only Backend Service</p><p className="text-[12px] font-bold">3. Delivery within 15 Working Days</p>
-
-                        <div className="mt-4">
-                            <p className="text-lg font-semibold">Only at $89.99 or ₹ 7,499.00 </p>
-                            {/* <form action="" className="">
-                                <input
-                                    type="text"
-                                    className="border border-red-800 rounded p-2 w-full"
-                                    placeholder="Name"
-                                    name="name"
-                                />
-                                <input
-                                    type="text"
-                                    className="border border-green-800 rounded p-2 w-full mt-2"
-                                    placeholder="Email"
-                                    name="email"
-                                />
-                                <input
-                                    type="text"
-                                    className="border border-blue-800 rounded p-2 w-full mt-2"
-                                    placeholder="PhoneNumber with CountryCode"
-                                    name="phone"
-                                />
-                                <textarea
-                                    className="border border-yellow-400 rounded p-2 w-full mt-2"
-                                    placeholder="Any Additional Information"
-                                    rows="5"
-                                    cols="30"
-                                    name="additionalInfo"
-                                ></textarea>
-                            </form>
-                            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
-                            <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
-                                    <FaWhatsapp style={{ color: "#075E54", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://ig.me/m/arindam_atjoy" target="_blank" rel="noopener noreferrer">
-                                    <FaInstagram style={{ color: "#d62976", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="https://m.me/ArindamChakraborty747" target="_blank" rel="noopener noreferrer">
-                                    <FaFacebook style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
-                                </a>
-                                <a href="tel:+919830410335">
-                                    <FaMobile style={{ color: "#A2AAAD", fontSize: "48px" }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
-                            {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
-                            [Platinum Offer] <p className="">WebApp + Android + Backend + Deployment</p>
+                            <p className="">WebApp + Android + Backend + Deployment</p>
                         </h3>
                         <p className="text-gray-600">Empower Your Digital Presence with Seamless WebApp, Android App, Backend, and Deployment - All-in-One Solution for Your Success</p>
-                        <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 35 Working Days</p>
+                        {/* <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 35 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $249.99 or ₹ 20,499.00 </p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $559.99 or ₹ 46,499.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $2999.99 or ₹ 2,50,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $4999.99 or ₹ 4,17,499.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -484,7 +393,7 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -504,15 +413,20 @@ const Services = () => {
                     </div>
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                    <p className="text-lg font-bold mb-2 text-red-400">
+                    ConveniShop Pro
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
-                            [Enterprise Offer] <p className="">E-commerce Solutions</p>
+                            <p className="">E-commerce Solutions</p>
                         </h3>
                         <p className="text-gray-600">Revolutionize Your Shopping Experience with your business – Where Convenience Meets Quality</p>
-                        <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 45 Working Days</p>
+                        {/* <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 45 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $449.99 or ₹ 36,999.00 </p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $659.99 or ₹ 55,000.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $3199.99 or ₹ 2,60,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $5199.99 or ₹ 4,34,499.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -542,7 +456,7 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
@@ -562,15 +476,20 @@ const Services = () => {
                     </div>
 
                     <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
-                        <h3 className="text-lg font-semibold mb-2">
+                    <p className="text-lg font-bold mb-2 text-red-400">
+                    FlowFuse
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
                             {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
-                            [Surprise Offer] <p className="">Machine Learning</p>
+                            DevOps
                         </h3>
-                        <p className="text-gray-600">Unlock the Future with Machine Learning: Your Gateway to Intelligent Solutions.</p>
-                        <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 45 Working Days</p>
+                        <p className="text-gray-600">Empower Your Business with Seamless Flow: Middleware Integration, AWS Solutions Unlocked</p>
+                        {/* <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Only Backend Service</p><p className="text-[12px] font-bold">3. Delivery within 15 Working Days</p> */}
 
                         <div className="mt-4">
-                            <p className="text-lg font-semibold">Starting at $549.99 or ₹ 45,499.00 </p>
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $29.99 or ₹ 2,500.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $99.99 or ₹ 8,299.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $199.99 or ₹ 16,499.00</p>
                             {/* <form action="" className="">
                                 <input
                                     type="text"
@@ -600,7 +519,70 @@ const Services = () => {
                             </form>
                             <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
                             <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
+                                </a>
+                                <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">
+                                    <FaWhatsapp style={{ color: "#075E54", fontSize: "48px", marginRight: "10px" }} />
+                                </a>
+                                <a href="https://ig.me/m/arindam_atjoy" target="_blank" rel="noopener noreferrer">
+                                    <FaInstagram style={{ color: "#d62976", fontSize: "48px", marginRight: "10px" }} />
+                                </a>
+                                <a href="https://m.me/ArindamChakraborty747" target="_blank" rel="noopener noreferrer">
+                                    <FaFacebook style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
+                                </a>
+                                <a href="tel:+919830410335">
+                                    <FaMobile style={{ color: "#A2AAAD", fontSize: "48px" }} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
+                    <p className="text-lg font-bold mb-2 text-red-400">
+                    DataMind Pro
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
+                            {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
+                             <p className="">AI/ML/DS</p>
+                        </h3>
+                        <p className="text-gray-600">Illuminate Insights, Unleash Potential: AI, ML, Data Science Excellence</p>
+                        {/* <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 45 Working Days</p> */}
+
+                        <div className="mt-4">
+                        <p className="text-lg font-semibold text-slate-600">Silver: Starting at $999.99 or ₹ 85,499.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $2999.99 or ₹ 2,50,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $4999.99 or ₹ 4,17,499.00</p>
+                            {/* <form action="" className="">
+                                <input
+                                    type="text"
+                                    className="border border-red-800 rounded p-2 w-full"
+                                    placeholder="Name"
+                                    name="name"
+                                />
+                                <input
+                                    type="text"
+                                    className="border border-green-800 rounded p-2 w-full mt-2"
+                                    placeholder="Email"
+                                    name="email"
+                                />
+                                <input
+                                    type="text"
+                                    className="border border-blue-800 rounded p-2 w-full mt-2"
+                                    placeholder="PhoneNumber with CountryCode"
+                                    name="phone"
+                                />
+                                <textarea
+                                    className="border border-yellow-400 rounded p-2 w-full mt-2"
+                                    placeholder="Any Additional Information"
+                                    rows="5"
+                                    cols="30"
+                                    name="additionalInfo"
+                                ></textarea>
+                            </form>
+                            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full">Contact</button> */}
+                            <div className="flex flex-row items-center justify-center">
+                                <a href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedinIn style={{ color: "#316FF6", fontSize: "48px", marginRight: "10px" }} />
                                 </a>
                                 <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" rel="noopener noreferrer">

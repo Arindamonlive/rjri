@@ -29,10 +29,12 @@ const Footer =() => {
                             <li className='my-1'>AI & Machine Learning Integration</li>
                         </ul>
                 </div> */}
-                <div className="mb-4 md:mb-0">
-                    <h2 className="text-[22px] font-bold text-blue-800 py-1 uppercase ">Contact</h2>
-                    <p className="text-[16px] my-1 text-yellow-600">Email: arindamckbt@gmail.com</p>
-                    <p className="text-[16px] my-1 text-yellow-600">Phone: +919830410335</p>
+                <div className="mb-4 md:mb-0 text-[8px] text-yellow-600">
+                    <p className="">#artificialintelligence #ai #machinelearning #technology #datascience #python #deeplearning #programming #tech #robotics #innovation #bigdata #coding #iot #computerscience #data #dataanalytics #business #engineering #robot #datascientist #art #software #automation #analytics #ml #pythonprogramming #programmer #digitaltransformation #developer</p>
+                    <p className="">#webdevelopment #webdesign #webdeveloper #html #website #css #digitalmarketing #coding #programming #javascript #seo #websitedesign #webdesigner #developer #programmer #web #marketing #wordpress #python #ecommerce #coder #design #software #code #php #softwaredeveloper #java #business #graphicdesign #technology</p>
+                    {/* <h2 className="text-[22px] font-bold text-blue-800 py-1 uppercase ">Contact</h2>
+                    <p className="text-[8px] my-1 text-yellow-600">Email: arindamckbt@gmail.com</p>
+                    <p className="text-[16px] my-1 text-yellow-600">Phone: +919830410335</p> */}
                 </div>
                 {/* <h2 className="text-[22px] font-semibold text-blue-800 py-1 uppercase">Follow me
                 <div className="flex space-x-4">
