@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
+    "react-app": "file:",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-loader-spinner": "^6.1.4",
