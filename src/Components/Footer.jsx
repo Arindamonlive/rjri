@@ -54,7 +54,7 @@ const Footer =() => {
 
             </div>
             <div className="text-white text-[12px] text-center mt-1 text-yellow-600">
-        &copy; {currentYear} RJR Infinity. All rights reserved. Developed By Mr. Arindam Chakraborty +91-9830410335/arindamckbt@gmail.com
+        &copy; {currentYear} RJR Infinity. All rights reserved. Developed By Mr. Arindam Chakraborty +91-9830410335/arindamchakraborty@rjrinfinity.com
       </div>
         </footer>
     )
