@@ -39,7 +39,7 @@ const Services = () => {
         <div
             id="Services"
             className="p-20  items-center justify-center border-b-2 border-solid border-red-400"
-            style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            >
             <h1
                 data-aos="fade-right"
                 className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500">

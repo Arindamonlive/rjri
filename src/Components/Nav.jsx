@@ -57,8 +57,8 @@ const Nav = () => {
   );
 
   return (
-    <nav className="bg-yellow-100 sticky top-0 z-50">
-      <div className="h-10vh flex justify-between text-blue-900 lg:py-2 px-4 py-2 border-b border-slate-800">
+    <nav className=" sticky top-0 z-50 bg-stone-200">
+      <div className="h-10vh flex justify-between text-blue-900 lg:py-2 px-4 py-2">
         <div className="flex items-center flex-1">
           <a href="/" className="cursor-pointer">
             <img src={img} width={40} height={20} alt="" />

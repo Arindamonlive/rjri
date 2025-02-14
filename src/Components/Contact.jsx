@@ -38,11 +38,11 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="p-4 lg:p-20 flex flex-col items-center justify-center border-b-2 border-solid border-red-200"style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      className="p-4 lg:p-20 flex flex-col items-center justify-center border-b-2 border-solid border-red-200"
     >
       <h1
         data-aos="fade-up"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500 " style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}
+        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-blue-500 " style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}
       >
         Write to us
       </h1>
@@ -53,7 +53,7 @@ const Contact = () => {
             Your message has been saved successfully!
           </p>
           <button
-            className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-fuchsia-800 bg-fuchsia-800 hover:bg-slate-900 rounded-lg py-4 px-24 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
+            className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-blue-800 bg-blue-800 hover:bg-slate-900 rounded-lg py-4 px-24 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
             onClick={handleAddMore}
           >
             Add More
@@ -63,14 +63,14 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="flex flex-col gap-2 lg:w-1/2">
           <div className="lg:flex gap-9">
             <input
-              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-fuchsia-800 b_glow text-xl text-blue-800"
+              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
               placeholder="Name"
               type="text"
               name="name"
               required
             />
             <input
-              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-fuchsia-800 b_glow text-xl text-blue-800"
+              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
               placeholder="Email"
               type="email"
               name="email"
@@ -78,7 +78,7 @@ const Contact = () => {
             />
           </div>
           <textarea
-            className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-fuchsia-800 b_glow text-xl text-blue-800"
+            className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
             placeholder="Write your Message"
             name="message"
             id="message"
@@ -86,7 +86,7 @@ const Contact = () => {
             rows="10"
           ></textarea>
           <button
-            className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-fuchsia-800 bg-fuchsia-800 hover:bg-slate-900 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
+            className="neno-button shadow-xl hover:shadow-blue-800/50 text-white border-2 border-blue-800 bg-blue-800 hover:bg-slate-900 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
             type="submit"
           >
             Submit

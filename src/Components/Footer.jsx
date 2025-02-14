@@ -1,62 +1,62 @@
-import {AiFillGithub} from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import {FiTwitter} from 'react-icons/fi';
+import { FiTwitter } from 'react-icons/fi';
 import img from "../assets/logo1.png";
 import React from "react";
 
-const Footer =() => {
+const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className='bg-green-200 text-white lg:px-48 px-4 py-2'>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-1">
-                <div className="mb-4 md:mb-0">
-                    <span className="text-1xl font-semibold text-white py-1 uppercase">
-                    <a href="/" className="cursor-pointer">
-            <img src={img} width={80} height={40} alt="" />
-          </a>
-                    </span>
-                    <p className="text-[16px] my-1 font-bold text-yellow-600">Repository Juncture Resource Infinity</p>
+        <footer className='bg-gray-900 text-white py-6'>
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 text-center md:text-left">
+                {/* Logo & Branding */}
+                <div className="flex flex-col items-center md:items-start">
+                    <a href="/" className="cursor-pointer mb-2">
+                        <img src={img} width={100} height={50} alt="Company Logo" className='rounded-md' />
+                    </a>
+                    <p className="text-sm text-gray-400 font-medium">Repository Juncture Resource Infinity</p>
                 </div>
-                {/* <div className="">
-                    <h2 className="text-[22px] font-bold text-blue-800 py-1 uppercase">
-                        Services
-                    </h2>
-                    <ul className="text-[16px] my-1 text-yellow-600">
-                            <li className='my-1'>Web Design</li>
-                            <li className='my-1'>Web Development</li>
-                            <li className='my-1'>Backend</li>
-                            <li className='my-1'>Deployment</li>
-                            <li className='my-1'>AI & Machine Learning Integration</li>
-                        </ul>
-                </div> */}
-                <div className="mb-4 md:mb-0 text-[8px] text-yellow-600">
-                    <p className="">#artificialintelligence #ai #machinelearning #technology #datascience #python #deeplearning #programming #tech #robotics #innovation #bigdata #coding #iot #computerscience #data #dataanalytics #business #engineering #robot #datascientist #art #software #automation #analytics #ml #pythonprogramming #programmer #digitaltransformation #developer</p>
-                    <p className="">#webdevelopment #webdesign #webdeveloper #html #website #css #digitalmarketing #coding #programming #javascript #seo #websitedesign #webdesigner #developer #programmer #web #marketing #wordpress #python #ecommerce #coder #design #software #code #php #softwaredeveloper #java #business #graphicdesign #technology</p>
-                    {/* <h2 className="text-[22px] font-bold text-blue-800 py-1 uppercase ">Contact</h2>
-                    <p className="text-[8px] my-1 text-yellow-600">Email: arindamckbt@gmail.com</p>
-                    <p className="text-[16px] my-1 text-yellow-600">Phone: +919830410335</p> */}
-                </div>
-                {/* <h2 className="text-[22px] font-semibold text-blue-800 py-1 uppercase">Follow me
-                <div className="flex space-x-4">
-                            <a className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out" href="https://github.com/Arindamonlive" >
-                                <AiFillGithub className="text-[28px]"/>
-                            </a>
-                            <a className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out" href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/" >
-                                <FaLinkedinIn className="text-[28px]"/>
-                            </a>
-                            <a className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out" href="https://twitter.com/arindamckbt" >
-                                <FiTwitter className="text-[28px]"/>
-                            </a>
-                            <a className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out" href="https://www.instagram.com/arindam_atjoy/" >
-                                <FaInstagram className="text-[28px]"/>
-                            </a>
-                </div></h2> */}
 
+                {/* Services Section */}
+                <div>
+                    <h2 className="text-lg font-semibold text-white mb-3 uppercase">Services</h2>
+                    <ul className="text-sm text-gray-300 space-y-1">
+                        <li className=""><a className='hover:text-yellow-500 transition duration-150' href="/Services">Web Design</a></li>
+                        <li className=""><a className='hover:text-yellow-500 transition duration-150'href="/Services">Web Development</a></li>
+                        <li><a className='hover:text-yellow-500 transition duration-150'href="/Services">Web Development</a></li>
+                        <li><a className='hover:text-yellow-500 transition duration-150'href="/Services">Backend</a></li>
+                        <li><a className='hover:text-yellow-500 transition duration-150'href="/Services">Deployment</a></li>
+                        <li><a className='hover:text-yellow-500 transition duration-150'href="/Services">AI & Machine Learning</a></li>
+                        
+                    </ul>
+                </div>
+
+                {/* Social Media Section */}
+                <div>
+                    <h2 className="text-lg font-semibold text-white mb-3 uppercase">Follow Me</h2>
+                    <div className="flex justify-center md:justify-start space-x-4">
+                        <a className="text-gray-400 hover:text-blue-500 transition" href="https://github.com/Arindamonlive">
+                            <AiFillGithub className="text-2xl" />
+                        </a>
+                        <a className="text-gray-400 hover:text-blue-500 transition" href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/">
+                            <FaLinkedinIn className="text-2xl" />
+                        </a>
+                        <a className="text-gray-400 hover:text-blue-500 transition" href="https://twitter.com/arindamckbt">
+                            <FiTwitter className="text-2xl" />
+                        </a>
+                        <a className="text-gray-400 hover:text-blue-500 transition" href="https://www.instagram.com/arindam_atjoy/">
+                            <FaInstagram className="text-2xl" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className="text-white text-[12px] text-center mt-1 text-yellow-600">
-        &copy; {currentYear} RJR Infinity. All rights reserved. Developed By Mr. Arindam Chakraborty +91-9830410335/arindamchakraborty@rjrinfinity.com
-      </div>
+
+            {/* Copyright Section */}
+            <div className="text-center text-gray-400 text-sm mt-6 border-t border-gray-700 pt-4">
+                &copy; {currentYear} RJR Infinity. All rights reserved. Developed by <span className='text-yellow-500'>Arindam Chakraborty</span>
+            </div>
         </footer>
-    )
-}
+    );
+};
+
 export default Footer;
