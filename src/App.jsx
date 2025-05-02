@@ -6,6 +6,9 @@ import Services from "./Components/Services";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import TermsAndConditions from './Components/TermsAndConditions';
+import Privacy from './Components/PrivacyPolicy';
+import Refund from './Components/Refund';
 import { DNA } from "react-loader-spinner";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -41,6 +44,9 @@ const App = () => {
             <Route path="/services" element={<Services />}></Route>
             <Route path="/projects" element={<Projects />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/T&C" element={<TermsAndConditions />}></Route>
+            <Route path="/privacy" element={<Privacy />}></Route>
+            <Route path="/refund" element={<Refund />}></Route>
           </Routes>
           <Footer />
         </>
