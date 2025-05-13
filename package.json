@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.9.0",
+    "cors-anywhere": "^0.4.4",
     "react": "^18.2.0",
     "react-app": "file:",
     "react-dom": "^18.2.0",
@@ -20,6 +22,7 @@
     "react-router-dom": "^6.22.2",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.3",
+    "react-typed": "^2.0.12",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8"
   },

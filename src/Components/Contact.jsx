@@ -1,98 +1,104 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import img from '../assets/bgp5.jpg'
-
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
 
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    const formData = new FormData(event.target);
-    const response = await fetch("https://formspree.io/f/xvoeqbzk", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    if (response.ok) {
-      setSubmitted(true);
-    } else {
-      console.error("Form submission failed");
+    try {
+      await axios.post('https://script.google.com/macros/s/AKfycbzoFH9Qc5flr81_sDz0YAZFI0750d2ClkSfseXs-57aA3pulBcqDHPr0VIzLxyLYndaig/exec', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      alert("Form submitted successfully");
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Failed to submit form");
     }
   };
 
-  const handleAddMore = () => {
-    setSubmitted(false);
-  };
-
   return (
-    <div
-      id="Contact"
-      className="p-4 lg:p-20 flex flex-col items-center justify-center border-b-2 border-solid border-red-200"
-    >
-      <h1
-        data-aos="fade-up"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-blue-500 " style={{textShadow: "0 2px 2px rgba(0, 0, 0, 0.5)"}}
-      >
-        Write to us
-      </h1>
+    <div className="flex flex-col md:flex-row p-8 bg-white rounded-md shadow-lg">
+      {/* Left - Address */}
+      <div className="md:w-1/2 pr-6 border-r border-gray-200">
+        <h2 className="text-2xl font-bold mb-4">Our Office</h2>
+        <p className="text-gray-700 mb-2">Repository Juncture Resource Infinity</p>
+        <p className="text-gray-700 mb-2">Kolkata - 700084, West Bengal, India</p>
+        <p className="text-gray-700 mb-2">Phone:91 9830410335 / +91 7308656861</p>
+        <p className="text-gray-700">Email: info@rjrinfinity.com / rjriinfo@gmail.com</p>
+      </div>
 
-      {submitted ? (
-        <div>
-          <p className="text-green-600 font-semibold mb-4">
-            Your message has been saved successfully!
-          </p>
-          <button
-            className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-blue-800 bg-blue-800 hover:bg-slate-900 rounded-lg py-4 px-24 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
-            onClick={handleAddMore}
-          >
-            Add More
-          </button>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} className="flex flex-col gap-2 lg:w-1/2">
-          <div className="lg:flex gap-9">
-            <input
-              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
-              placeholder="Name"
-              type="text"
-              name="name"
-              required
-            />
-            <input
-              className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
-              placeholder="Email"
-              type="email"
-              name="email"
-              required
-            />
-          </div>
+      {/* Right - Contact Form */}
+      <div className="md:w-1/2 pl-6 mt-6 md:mt-0">
+        <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            className="w-full px-4 py-2 border border-gray-300 rounded"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            className="w-full px-4 py-2 border border-gray-300 rounded"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="Your Phone Number"
+            className="w-full px-4 py-2 border border-gray-300 rounded"
+            required
+          />
           <textarea
-            className="w-full lg:my-3 rounded-lg bg-white p-4 border-2 border-blue-800 b_glow text-xl text-blue-800"
-            placeholder="Write your Message"
             name="message"
-            id="message"
-            cols="20"
-            rows="10"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Your Message"
+            rows="4"
+            className="w-full px-4 py-2 border border-gray-300 rounded"
+            required
           ></textarea>
           <button
-            className="neno-button shadow-xl hover:shadow-blue-800/50 text-white border-2 border-blue-800 bg-blue-800 hover:bg-slate-900 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
             type="submit"
+            className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           >
-            Submit
+            Send Message
           </button>
         </form>
-      )}
+      </div>
     </div>
   );
 };

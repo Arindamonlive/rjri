@@ -8,7 +8,7 @@ import { RiHomeWifiFill } from "react-icons/ri";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FcServices } from "react-icons/fc";
 import { SiOpenproject } from "react-icons/si";
-import { FcBusinessContact } from "react-icons/fc";
+import { MdOutlineCastForEducation } from "react-icons/md";
 import { TfiWrite } from "react-icons/tfi";
 import React from "react";
 
@@ -44,6 +44,12 @@ const Nav = () => {
           <li className="my-2 py-2 ml-0 hover:bg-slate-800 hover:rounded hover:shadow-md cursor-pointer">
             <SiOpenproject className="inline-block mr-2" />
             Projects
+          </li>
+        </Link>
+        <Link spy={true} smooth={true} to="Traning" onClick={handleItemClick}>
+          <li className="my-2 py-2 ml-0 hover:bg-slate-800 hover:rounded hover:shadow-md cursor-pointer">
+            <MdOutlineCastForEducation className="inline-block mr-2" />
+            Traning & Internship
           </li>
         </Link>
         <Link spy={true} smooth={true} to="Contact" onClick={handleItemClick}>
@@ -112,6 +118,17 @@ const Nav = () => {
                 <li className="ml-0 hover:text-fuchsia-600 transition hover:shadow-md cursor-pointer">
                   <SiOpenproject className="inline-block mr-2" />
                   Projects
+                </li>
+              </Link>
+              <Link
+                spy={true}
+                smooth={true}
+                to="Traning"
+                onClick={handleItemClick}
+              >
+                <li className="ml-0 hover:text-fuchsia-600 transition hover:shadow-md cursor-pointer">
+                  <MdOutlineCastForEducation className="inline-block mr-2" />
+                  Traning & Internship
                 </li>
               </Link>
               <Link

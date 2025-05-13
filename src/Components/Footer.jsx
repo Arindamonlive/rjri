@@ -31,7 +31,10 @@ const Footer = () => {
               <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">Web Development</a></li>
               <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">Backend</a></li>
               <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">Deployment</a></li>
-              <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">AI & Machine Learning</a></li>
+              <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">AI</a></li>
+              <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">Machine Learning</a></li>
+              <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">UI/UX</a></li>
+              <li><a className='hover:text-yellow-500 transition duration-150' href="/Services">Middleware</a></li>
             </ul>
           </div>
 
