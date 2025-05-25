@@ -6,6 +6,7 @@ import blc from '../assets/benulal.png'
 import amit from '../assets/amit.png'
 import km from '../assets/km.png'
 
+
 const About = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const About = () => {
         className="lg:text-start px-10 py-16 text-center flex lg:flex-row flex-col justify-between items-center border-b-2 border-gray-300 bg-gray-50"
       >
         <img
-          data-aos="fade-down"
+          // data-aos="fade-down"
           src={img}
           width={400}
           height={400}
@@ -24,14 +25,14 @@ const About = () => {
         />
         <div className="h-full lg:py-0 flex flex-col justify-center lg:items-start items-center lg:ml-16">
           <h1
-            data-aos="fade-right"
+            // data-aos="fade-right"
             className="text-5xl font-bold text-blue-800 mb-6 leading-normal uppercase"
             style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)" }}
           >
            Mr. Arindam Chakraborty
           </h1>
           <h1
-            data-aos="fade-right"
+            // data-aos="fade-right"
             className="text-1xl font-bold text-slate-400 mb-6 leading-normal "
 
           >
@@ -73,7 +74,7 @@ const About = () => {
       {/* Team Section */}
       <div className="px-10 py-16 bg-gray-100">
         <h2
-          data-aos="fade-up"
+          // data-aos="fade-up"
           className="text-4xl font-semibold text-blue-800 text-center mb-10"
         >
           Meet Our Team
@@ -84,7 +85,7 @@ const About = () => {
 
 
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
             <img
@@ -100,7 +101,7 @@ const About = () => {
           </div>
 
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             data-aos-delay="200"
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
@@ -118,7 +119,7 @@ const About = () => {
 
 
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
             <img
@@ -134,7 +135,7 @@ const About = () => {
           </div>
 
                     <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
             <img
@@ -150,7 +151,7 @@ const About = () => {
           </div>
 
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             data-aos-delay="100"
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >

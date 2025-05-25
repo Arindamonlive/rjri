@@ -1,5 +1,5 @@
 import { AiFillGithub } from 'react-icons/ai';
-import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaMobile, FaWhatsapp, FaFacebook, FaGlobeAmericas } from "react-icons/fa";
 import { FiTwitter } from 'react-icons/fi';
 import img from "../assets/logo1.png";
 import React, { useState } from "react";
@@ -60,10 +60,24 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold text-white mb-3 uppercase">Follow Me</h2>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a className="text-gray-400 hover:text-blue-500 transition" href="https://github.com/Arindamonlive"><AiFillGithub className="text-2xl" /></a>
-              <a className="text-gray-400 hover:text-blue-500 transition" href="https://www.linkedin.com/in/arindam-chakraborty-5177286a/"><FaLinkedinIn className="text-2xl" /></a>
-              <a className="text-gray-400 hover:text-blue-500 transition" href="https://twitter.com/arindamckbt"><FiTwitter className="text-2xl" /></a>
-              <a className="text-gray-400 hover:text-blue-500 transition" href="https://www.instagram.com/arindam_atjoy/"><FaInstagram className="text-2xl" /></a>
+                <a href="https://github.com/Arindamonlive" target="_blank" className="text-gray-200 hover:text-black">
+                  <AiFillGithub />
+                </a>
+                <a href="https://www.linkedin.com/company/rjrinfinity/" target="_blank" className="text-[#0077b5] hover:text-blue-800">
+                  <FaLinkedinIn />
+                </a>
+                <a href="https://www.instagram.com/rjrinfinity/" target="_blank" className="text-[#E1306C] hover:text-pink-600">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61557574765261" target="_blank" className="text-[#1877F2] hover:text-blue-700">
+                  <FaFacebook />
+                </a>
+                <a href="tel:+919830410335" className="text-green-700 hover:text-green-800">
+                  <FaMobile />
+                </a>
+                <a href="https://wa.me/message/SOPBPN6JSYZ7K1" target="_blank" className="text-[#25D366] hover:text-green-600">
+                  <FaWhatsapp />
+                </a>
             </div>
           </div>
         </div>

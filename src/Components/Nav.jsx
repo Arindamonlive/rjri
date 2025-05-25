@@ -46,7 +46,7 @@ const Nav = () => {
             Projects
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Traning" onClick={handleItemClick}>
+        <Link spy={true} smooth={true} to="course" onClick={handleItemClick}>
           <li className="my-2 py-2 ml-0 hover:bg-slate-800 hover:rounded hover:shadow-md cursor-pointer">
             <MdOutlineCastForEducation className="inline-block mr-2" />
             Traning & Internship
@@ -56,6 +56,12 @@ const Nav = () => {
           <li className="my-2 py-2 ml-0 hover:bg-slate-800 hover:rounded hover:shadow-md cursor-pointer">
             <TfiWrite className="inline-block mr-2" />
             Write to us
+          </li>
+        </Link>
+                <Link spy={true} smooth={true} to="Login" onClick={handleItemClick}>
+          <li className="my-2 py-2 ml-0 hover:bg-slate-800 hover:rounded hover:shadow-md cursor-pointer">
+            <TfiWrite className="inline-block mr-2" />
+            Admin Zone
           </li>
         </Link>
       </ul>
@@ -123,7 +129,7 @@ const Nav = () => {
               <Link
                 spy={true}
                 smooth={true}
-                to="Traning"
+                to="course"
                 onClick={handleItemClick}
               >
                 <li className="ml-0 hover:text-fuchsia-600 transition hover:shadow-md cursor-pointer">
@@ -142,6 +148,17 @@ const Nav = () => {
                   Write to us
                 </li>
               </Link>
+                            <Link
+                spy={true}
+                smooth={true}
+                to="Login"
+                onClick={handleItemClick}
+              >
+                <li className="ml-0 hover:text-fuchsia-600 transition hover:shadow-md cursor-pointer">
+                  <TfiWrite className="inline-block mr-2" />
+                  Admin Zone
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -155,3 +172,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+

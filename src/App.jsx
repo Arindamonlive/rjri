@@ -9,6 +9,9 @@ import Footer from "./Components/Footer";
 import TermsAndConditions from './Components/TermsAndConditions';
 import Privacy from './Components/PrivacyPolicy';
 import Refund from './Components/Refund';
+import Courses from './Components/Courses';
+import Login from './Components/Login';
+import AdminCore from './Components/AdminCore';
 import { DNA } from "react-loader-spinner";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -47,6 +50,9 @@ const App = () => {
             <Route path="/T&C" element={<TermsAndConditions />}></Route>
             <Route path="/privacy" element={<Privacy />}></Route>
             <Route path="/refund" element={<Refund />}></Route>
+            <Route path="/course" element={<Courses />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/portal/admincore" element={<AdminCore />}></Route>
           </Routes>
           <Footer />
         </>

@@ -45,15 +45,15 @@ const openContactForm = (serviceName) => {
     const handleFormSubmit = async (e) => {
         e.preventDefault();
 
-        const formUrl = "https://script.google.com/macros/s/AKfycbzwYVRhBRnkEqcXiCA7nEJMEG3FchlL3Tl9o2R2ZRo9L4AAWrfwI2JHfBsI38JJQqVuZw/exec";
+        const formUrl = "https://arindam.tech/api/contactservice/";
         const formDataToSend = new FormData();
 
         // ✅ Add your form fields using correct Google Form entry IDs
-        formDataToSend.append("entry1111111111", selectedService); // FormName
-        formDataToSend.append("entry2222222222", formData.name);   // Name
-        formDataToSend.append("entry3333333333", formData.email);  // Email
-        formDataToSend.append("entry4444444444", formData.contact); // Contact
-        formDataToSend.append("entry5555555555", formData.message); // Message
+        formDataToSend.append("service", selectedService); // FormName
+        formDataToSend.append("name", formData.name);   // Name
+        formDataToSend.append("email", formData.email);  // Email
+        formDataToSend.append("contact", formData.contact); // Contact
+        formDataToSend.append("message", formData.message); // Message
 
         try {
             // Show "Please wait..." popup
@@ -326,6 +326,27 @@ const openContactForm = (serviceName) => {
 
                         </div>
                         <button onClick={() => openContactForm('DataMind Pro')} className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg">
+                            Contact Us
+                        </button>
+                    </div>
+                        <div data-aos="fade-up" className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
+                        <p className="text-lg font-bold mb-2 text-red-400">
+                            SAP PowerSuite
+                        </p>
+                        <h3 className="text-sm font-semibold mb-2">
+                            {/* <FaJava style={{ color: "#5382a1", fontSize: "48px" }} /> */}
+                            <p className="">Enterprise SAP Services</p>
+                        </h3>
+                        <p className="text-gray-600">Streamline your operations, empower decision-making, and accelerate digital transformation with our end-to-end SAP service offerings — including ERP, S/4HANA migration, SAP Fiori development, and SAP Business Technology Platform integrations.</p>
+                        {/* <p className="text-[12px] font-bold">1. Rate may change depending on the job details and complexity</p><p className="text-[12px] font-bold">2. Delivery within 30 - 45 Working Days</p> */}
+
+                        <div className="mt-4">
+                            <p className="text-lg font-semibold text-slate-600">Silver: Starting at $1,499.99 or ₹ 1,24,999.00</p>
+                            <p className="text-lg font-semibold text-yellow-600">Gold: Starting at $4,499.99 or ₹ 3,75,499.00</p>
+                            <p className="text-lg font-semibold text-slate-800">Platinum: Starting at $8,999.99 or ₹ 7,49,999.00</p>
+
+                        </div>
+                        <button onClick={() => openContactForm('SAP PowerSuite')} className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg">
                             Contact Us
                         </button>
                     </div>

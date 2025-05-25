@@ -21,13 +21,14 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://script.google.com/macros/s/AKfycbzoFH9Qc5flr81_sDz0YAZFI0750d2ClkSfseXs-57aA3pulBcqDHPr0VIzLxyLYndaig/exec', formData, {
+      await axios.post('https://arindam.tech/api/contact/', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
+        mode: 'no-cors'
       });
       
-      alert("Form submitted successfully");
+      // alert("Form submitted successfully");
       setFormData({
         name: '',
         email: '',
