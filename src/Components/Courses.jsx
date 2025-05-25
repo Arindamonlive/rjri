@@ -70,7 +70,7 @@ const Course = () => {
     "Web Development": "https://rzp.io/rzp/IeZU2Fu",
     "Machine Learning": "https://rzp.io/rzp/dpxjI9I",
     "Artificial Intelligence": "https://rzp.io/rzp/05LCU5zz",
-    "Final Year Project Assistance": "https://rzp.io/rzp/QClEQeY0",
+    "Final Year Project Assistance": "https://rzp.io/rzp/U5tu0kIW",
   };
 
   const handleSubmit = async () => {
@@ -168,10 +168,10 @@ const Course = () => {
             <strong>Delivery:</strong> Online/Remote
           </p>
           <p className="text-sm text-gray-700 font-semibold mb-4 line-through ">
-            Fee: ₹4000
+            Fee: ₹5000
           </p>
           <p className="text-sm text-gray-800 font-semibold mb-4">
-            Offer Fee: ₹1999/- Only (Including all taxes)
+            Offer Fee: ₹2999/- Only (Including all taxes)
           </p>
           <button
             onClick={() =>
