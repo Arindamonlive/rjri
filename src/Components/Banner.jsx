@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
+import globeAnimation from '../assets/Globalanimation.json';
 
 import logo from "../assets/logo1.png";
 import img1 from '../assets/image_1.png';
@@ -124,7 +125,7 @@ const Banner = () => {
         <Player
           autoplay
           loop
-          src="src\assets\Globalanimation.json"
+          src={globeAnimation}
           style={{ height: "300px", width: "300px" }}
         />
       </motion.div>
