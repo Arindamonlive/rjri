@@ -139,10 +139,10 @@ const Banner = () => {
         </div>
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10">
           {[
-            {
-              name: "Dr. Sonal Ghosh, Principal SVIST",
-              feedback: "What once felt like a nightmare in our organization turned into a seamless experience once R J R Infinity took charge. Their exceptional support and professionalism gave us the confidence that we were truly in capable hands.",
-            },
+            // {
+            //   name: "Dr. Sonal Ghosh, Principal SVIST",
+            //   feedback: "What once felt like a nightmare in our organization turned into a seamless experience once R J R Infinity took charge. Their exceptional support and professionalism gave us the confidence that we were truly in capable hands.",
+            // },
             {
               name: "Miss. Ananya Chakraborty, Onwer Garage Merchendise",
               feedback: "The transition from local operations to a global digital presence was executed flawlessly — the outreach has been phenomenal and delivered well within the committed timeline.",
@@ -174,6 +174,10 @@ const Banner = () => {
             {
               name: "Mr. Arpan Dolui, CEO Arpan Stell Furniture",
               feedback: "The transition from a traditional local showroom to a dynamic global digital storefront was executed flawlessly. The outreach and visibility for our steel furniture brand have grown tremendously — all delivered within the promised timeline.",
+            },
+            {
+              name: "Mrs. S Sarkar, Principal",
+              feedback: "What once felt like a nightmare in our organization turned into a seamless experience once R J R Infinity took charge. Their exceptional support and professionalism gave us the confidence that we were truly in capable hands.",
             },
           ].map((t, i) => (
             <div
