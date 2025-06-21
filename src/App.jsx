@@ -12,6 +12,11 @@ import Refund from './Components/Refund';
 import Courses from './Components/Courses';
 import Login from './Components/Login';
 import AdminCore from './Components/AdminCore';
+import AndroidAuto from './Components/AndroidBlog';
+import Kafka from './Components/DistributionBlog';
+import WebDevTrends2025 from './Components/WebBlog';
+import AndroidDevelopment from './Components/Android2025';
+import WebIndia from './Components/WebStartup'
 import { DNA } from "react-loader-spinner";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -53,6 +58,11 @@ const App = () => {
             <Route path="/course" element={<Courses />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/portal/admincore" element={<AdminCore />}></Route>
+            <Route path="/blog/android-auto-tech-overview" element={<AndroidAuto />}></Route>
+            <Route path="/blog/kafka-for-scalable-apps" element={<Kafka />}></Route>
+            <Route path="/blog/web-development-services" element={<WebDevTrends2025 />}></Route>
+            <Route path="/blog/android-development-2025" element={<AndroidDevelopment />}></Route>
+            <Route path="/blog/web-dev-trends-india" element={<WebIndia />}></Route>
           </Routes>
           <Footer />
         </>
