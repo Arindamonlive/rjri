@@ -257,28 +257,7 @@ const Course = () => {
           </div>
         </div>
       )}
-      {/* Knowledge Blog Section */}
-<div className="mt-24 pt-10 border-t border-gray-300">
-  <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Knowledge Blog</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
-    {[
-      { title: "Web Development Services", path: "public/blog/web-development-services.html" },
-      { title: "Android Auto Tech Overview", path: "public/blog/android-auto-guide.html" },
-      { title: "Kafka for Scalable Apps", path: "public/blog/kafka-software-guide.html" },
-      { title: "Android Development in 2025", path: "public/blog/android-app-development-2025.html" },
-      { title: "Web Dev Trends in India", path: "public/blog/web-development-trends-2025.html" },
-    ].map((blog, index) => (
-      <a
-        key={index}
-        href={blog.path}
-        className="block p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-gray-200 hover:border-indigo-600"
-      >
-        <h3 className="text-lg font-semibold text-gray-800 hover:text-indigo-600">{blog.title}</h3>
-        <p className="text-sm text-gray-500 mt-2">Read more →</p>
-      </a>
-    ))}
-  </div>
-</div>
+
     </div>
 
   );
