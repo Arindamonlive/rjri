@@ -262,11 +262,11 @@ const Course = () => {
   <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Knowledge Blog</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
     {[
-      { title: "Web Development Services", path: "/blog/web-development-services" },
-      { title: "Android Auto Tech Overview", path: "/blog/android-auto-tech-overview" },
-      { title: "Kafka for Scalable Apps", path: "/blog/kafka-for-scalable-apps" },
-      { title: "Android Development in 2025", path: "/blog/android-development-2025" },
-      { title: "Web Dev Trends in India", path: "/blog/web-dev-trends-india" },
+      { title: "Web Development Services", path: "public/blog/web-development-services.html" },
+      { title: "Android Auto Tech Overview", path: "public/blog/android-auto-guide.html" },
+      { title: "Kafka for Scalable Apps", path: "public/blog/kafka-software-guide.html" },
+      { title: "Android Development in 2025", path: "public/blog/android-app-development-2025.html" },
+      { title: "Web Dev Trends in India", path: "public/blog/web-development-trends-2025.html" },
     ].map((blog, index) => (
       <a
         key={index}
