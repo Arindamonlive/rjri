@@ -1,6 +1,6 @@
 // src/pages/WebDevTrends2025.jsx
 import React from "react";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const WebDevTrends2025 = () => {
   return (
