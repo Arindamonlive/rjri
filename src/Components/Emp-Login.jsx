@@ -19,7 +19,7 @@ export default function EmpLogin() {
   localStorage.setItem("session_user", "employee");
   localStorage.setItem("session_id", sessionId);
 
-  navigate("/empcore/emp-port");
+  navigate("/empcore");
 }
 
     // // Replace this check with your desired credentials
@@ -40,7 +40,7 @@ export default function EmpLogin() {
     const cookies = document.cookie.split(";").map((c) => c.trim());
     const sessionCookie = cookies.find((c) => c.startsWith("session_user="));
     if (sessionCookie && sessionCookie.includes("employee")) {
-      navigate("/portal/empcore/emp-port");
+      navigate("/empcore");
     }
   }, [navigate]);
 

@@ -95,14 +95,14 @@ export default function EmpPort() {
     const sessionId = localStorage.getItem("session_id");
 
     if (!sessionCookie || !sessionId) {
-      navigate("/empcore");
+      navigate("/empcore-login");
     }
 
     const handleStorage = (event) => {
       if (event.key === "session_id") {
         setValidSession(false);
         alert("Your session was ended due to another login.");
-        navigate("/empcore");
+        navigate("/empcore-login");
       }
     };
 
@@ -114,7 +114,7 @@ export default function EmpPort() {
     document.cookie = "session_user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     localStorage.removeItem("session_user");
     localStorage.removeItem("session_id");
-    navigate("/empcore");
+    navigate("/empcore-login");
   };
 
   if (!validSession) return null;
