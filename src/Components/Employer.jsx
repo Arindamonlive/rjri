@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
-export default function EmpPort() {
+const Employer=()=> {
   const navigate = useNavigate();
   const [validSession, setValidSession] = useState(true);
   const [activeModal, setActiveModal] = useState(null);
@@ -185,3 +185,4 @@ export default function EmpPort() {
     </div>
   );
 }
+export default Employer;
