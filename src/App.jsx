@@ -12,6 +12,8 @@ import Refund from './Components/Refund';
 import Courses from './Components/Courses';
 import Login from './Components/Login';
 import AdminCore from './Components/AdminCore';
+import EmpLogin from './Components/Emp-Login';
+import Employer from './Components/Employer';
 import { DNA } from "react-loader-spinner";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -53,7 +55,8 @@ const App = () => {
             <Route path="/course" element={<Courses />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/portal/admincore" element={<AdminCore />}></Route>
-
+            <Route path="/empcore-login" element={<EmpLogin />}></Route>
+            <Route path="/empcore" element={<Employer />}></Route>
           </Routes>
           <Footer />
         </>
