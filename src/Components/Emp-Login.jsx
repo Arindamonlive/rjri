@@ -19,7 +19,7 @@ export default function EmpLogin() {
   localStorage.setItem("session_user", "employee");
   localStorage.setItem("session_id", sessionId);
 
-  navigate("/portal/empcore/emp-port");
+  navigate("/empcore/emp-port");
 }
 
     // // Replace this check with your desired credentials
